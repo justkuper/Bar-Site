@@ -1,0 +1,39 @@
+.about{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0;
+    background-color: grey;
+    height: 100dvh;
+}
+.list {
+  display: flex;
+  gap: 8px;
+  padding: 16px;
+
+  list-style: none;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+  width: 100%;
+  
+}
+
+.item {
+  flex-shrink: 0;
+  height: fit-content;
+  background-color: #FFF;
+
+  scroll-snap-align: center;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+
+  font-family: sans-serif;
+  font-size: 64px;
+  font-weight: bold;
+}

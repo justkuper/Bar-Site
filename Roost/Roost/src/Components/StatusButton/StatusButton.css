@@ -1,0 +1,26 @@
+/* Default style for the button when open */
+#statusButton.btn-block {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: green; /* Green for open */
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Style for the button when closed */
+  #statusButton.btn-block.closed {
+    background-color: red; /* Red for closed */
+  }
+  
+
+@media (max-width: 768px){
+    .statusButton{
+        display: block;
+        position: fixed;
+    bottom: 0vh;
+    }
+    
+}

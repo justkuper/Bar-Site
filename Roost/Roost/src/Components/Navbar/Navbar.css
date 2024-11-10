@@ -1,0 +1,78 @@
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 10%;
+}
+.nav-menu{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 40px;
+    font-size: 16px;
+}
+.nav-menu li{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+}
+.anchor-link{
+    text-decoration: none;
+    color: black;
+}
+.nav-mob-close{
+    display: none;
+    cursor: pointer;
+}
+.nav-mob-open{
+    display: none;
+    cursor: pointer;
+    width: 30px;
+}
+@media(max-width:768px){
+    .navbar{
+        margin: 20px 6%;
+    }
+    .navbar-img{
+        position: absolute;
+        left: 30px;
+        top: 30px;
+    }
+    .nav-mob-open{
+        display: block;
+        position: absolute;
+        right: 30px;
+        top: 30px;
+
+    }
+    .nav-mob-close{
+        display: block;
+        position: absolute;
+        top: 30px;
+        right: 7%;
+        width: 30px;
+
+    }
+    .navbar ul {
+        position: fixed; /* Stays in the same place relative to the viewport */
+        flex-direction: column; /* Keeps the items in a vertical list */
+        align-items: center; /* Align items to the start */
+        top: -1000vh; /* Initially place the menu off-screen above the viewport */
+        left: 0vh; /* Align to the left edge of the viewport */
+        gap: 30px;
+        background-color: grey;
+        width: 100%; /* Full width to cover the viewport */
+        height: auto; /* Adjust height based on your needs */
+        z-index: 2;
+        transition: top 0.5s; /* Transition effect for dropdown */
+        padding: 0px;
+    }
+    
+    .nav-menu li{
+        font-size: 30px;
+        padding-left: 0px;
+        flex-direction: column;
+        gap: 10px;
+    }
+}
