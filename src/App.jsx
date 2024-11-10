@@ -13,7 +13,6 @@ const App = () => {
       <StatusButton />
       <About />
       <Events />
-      
       <Footer />
     </div>
   )
